@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose Your Five Legend</title>
+    <!-- tailwind daisy cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-indigo-200">
+    <header class="container-fluid mx-auto bg-indigo-400 h-96">
+      <div class="w-9/12 mx-auto text-center">
+        <h1 class="text-5xl pt-12 pb-5 text-white font-bold italic">
+          Choose Your Five Legend
+        </h1>
+        <h3 class="text-3xl py-5 font-semibold">
+          There are many legend footballers in the world. But some are special
+          for you. So this is the chance to select your best five. Don't miss
+          it.
+        </h3>
+      </div>
+    </header>
+    <main>
+      <!-- first row -->
+      <div class="w-9/12 mx-auto grid grid-cols-4 gap-2 mt-12">
+        <!-- card 1 -->
+        <div class="card card-compact w-80 h-96 bg-base-100 shadow-xl">
+          <figure><img src="images/messi.jpg" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title justify-center text-3xl">Lionel Messi</h2>
+            <p class="text-center text-xl">700 Goals . 655 Assist</p>
+            <div class="card-actions justify-center">
+              <button class="btn bg-indigo-400 border-none w-6/12 text-xl">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card card-compact w-80 h-96 bg-base-100 shadow-xl">
+          <figure><img src="images/neymar.jpg" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title justify-center text-3xl">Neymar Jr</h2>
+            <p class="text-center text-xl">400 Goals . 325 Assist</p>
+            <div class="card-actions justify-center">
+              <button class="btn bg-indigo-400 border-none w-6/12 text-xl">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card card-compact w-80 h-96 bg-base-100 shadow-xl">
+          <figure><img src="images/suarez.jpg" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title justify-center text-3xl">Luis Suarez</h2>
+            <p class="text-center text-xl">550 Goals . 432 Assist</p>
+            <div class="card-actions justify-center">
+              <button class="btn bg-indigo-400 border-none w-6/12 text-xl">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="card card-compact w-80 h-96 bg-indigo-400 shadow-xl">
+          <h1 class="text-2xl font-semibold text-white text-center mt-3">
+            Choose your five
+          </h1>
+          <ol class="ml-10 mt-10 text-white text-2xl">
+            <li>1. Lionel Messi</li>
+            <li>2. Karim Benzema</li>
+            <li>3. Erling Haaland</li>
+            <li>4. Ronaldinho</li>
+            <li>5. Neymar Jr</li>
+          </ol>
+        </div>
+      </div>
+      <!-- second row -->
+      <div class="w-9/12 mx-auto grid grid-cols-4 gap-2 mt-12">
+        <!-- card 1 -->
+        <div class="card card-compact w-80 h-96 bg-base-100 shadow-xl">
+          <figure>
+            <img src="images/Erling-Haaland.jpg" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title justify-center text-3xl">Erling Haaland</h2>
+            <p class="text-center text-xl">217 Goals . 209 Assist</p>
+            <div class="card-actions justify-center">
+              <button class="btn bg-indigo-400 border-none w-6/12 text-xl">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card card-compact w-80 h-96 bg-base-100 shadow-xl">
+          <figure><img src="images/ronaldinho.jpg" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title justify-center text-3xl">Ronaldinho</h2>
+            <p class="text-center text-xl">685 Goals . 590 Assist</p>
+            <div class="card-actions justify-center">
+              <button class="btn bg-indigo-400 border-none w-6/12 text-xl">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card card-compact w-80 h-96 bg-base-100 shadow-xl">
+          <figure>
+            <img src="images/benzema.jpg" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title justify-center text-3xl">Karim Benzema</h2>
+            <p class="text-center text-xl">621 Goals . 586 Assist</p>
+            <div class="card-actions justify-center">
+              <button class="btn bg-indigo-400 border-none w-6/12 text-xl">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div
+          class="card card-compact w-full h-full bg-white text-black shadow-xl"
+        >
+          <h1 class="text-2xl font-semibold text-center mt-3">Budget</h1>
+          <div class="form-control p-5">
+            <label class="input-group">
+              <span>Per Player</span>
+              <input type="text" class="input input-bordered" />
+            </label>
+            <button class="btn bg-indigo-400">Calculate</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer starts -->
+    <footer>
+      <h3 class="py-12 text-xl w-96 mx-auto">
+        Copyright &copy; 2022 by Mohammad Sumon
+      </h3>
+    </footer>
+  </body>
+</html>
