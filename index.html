@@ -29,62 +29,73 @@
     <main>
       <!-- first row -->
       <div class="w-9/12 mx-auto grid grid-cols-4 gap-2 mt-12">
-        <!-- card 1 -->
+        <!-- Player 1 -->
         <div class="card card-compact w-80 h-96 bg-base-100 shadow-xl">
           <figure><img src="images/messi.jpg" alt="Shoes" /></figure>
           <div class="card-body">
             <h2 class="card-title justify-center text-3xl">Lionel Messi</h2>
             <p class="text-center text-xl">700 Goals . 655 Assist</p>
             <div class="card-actions justify-center">
-              <button class="btn bg-indigo-400 border-none w-6/12 text-xl">
+              <button
+                class="btn bg-indigo-400 border-none w-6/12 text-xl"
+                onclick="addPlayers(this)"
+              >
                 Select
               </button>
             </div>
           </div>
         </div>
-        <!-- card 2 -->
+        <!-- Player 2 -->
         <div class="card card-compact w-80 h-96 bg-base-100 shadow-xl">
           <figure><img src="images/neymar.jpg" alt="Shoes" /></figure>
           <div class="card-body">
             <h2 class="card-title justify-center text-3xl">Neymar Jr</h2>
             <p class="text-center text-xl">400 Goals . 325 Assist</p>
             <div class="card-actions justify-center">
-              <button class="btn bg-indigo-400 border-none w-6/12 text-xl">
+              <button
+                class="btn bg-indigo-400 border-none w-6/12 text-xl"
+                onclick="addPlayers(this)"
+              >
                 Select
               </button>
             </div>
           </div>
         </div>
-        <!-- card 3 -->
+        <!-- Player 3 -->
         <div class="card card-compact w-80 h-96 bg-base-100 shadow-xl">
           <figure><img src="images/suarez.jpg" alt="Shoes" /></figure>
           <div class="card-body">
             <h2 class="card-title justify-center text-3xl">Luis Suarez</h2>
             <p class="text-center text-xl">550 Goals . 432 Assist</p>
             <div class="card-actions justify-center">
-              <button class="btn bg-indigo-400 border-none w-6/12 text-xl">
+              <button
+                class="btn bg-indigo-400 border-none w-6/12 text-xl"
+                onclick="addPlayers(this)"
+              >
                 Select
               </button>
             </div>
           </div>
         </div>
-        <!-- card 4 -->
+        <!-- card 1 -->
         <div class="card card-compact w-80 h-96 bg-white text-black shadow-xl">
           <h1 class="text-2xl font-semibold text-center mt-3">
             Choose your five
           </h1>
-          <ol class="ml-10 mt-10 text-2xl">
-            <li>1. Lionel Messi</li>
-            <li>2. Karim Benzema</li>
-            <li>3. Erling Haaland</li>
-            <li>4. Ronaldinho</li>
-            <li>5. Neymar Jr</li>
-          </ol>
+          <div id="order-container" class="ml-10 mt-10 text-2xl">
+            <!-- <ol id="order-container" class="ml-10 mt-10 text-2xl"> -->
+            <!-- <li>1. Lionel Messi</li>
+              <li>2. Karim Benzema</li>
+              <li>3. Erling Haaland</li>
+              <li>4. Ronaldinho</li>
+              <li>5. Neymar Jr</li> -->
+            <!-- </ol> -->
+          </div>
         </div>
       </div>
       <!-- second row -->
       <div class="w-9/12 mx-auto grid grid-cols-4 gap-2 mt-12">
-        <!-- card 1 -->
+        <!-- Player 4 -->
         <div class="card card-compact w-80 h-96 bg-base-100 shadow-xl">
           <figure>
             <img src="images/Erling-Haaland.jpg" alt="Shoes" />
@@ -93,26 +104,32 @@
             <h2 class="card-title justify-center text-3xl">Erling Haaland</h2>
             <p class="text-center text-xl">217 Goals . 209 Assist</p>
             <div class="card-actions justify-center">
-              <button class="btn bg-indigo-400 border-none w-6/12 text-xl">
+              <button
+                class="btn bg-indigo-400 border-none w-6/12 text-xl"
+                onclick="addPlayers(this)"
+              >
                 Select
               </button>
             </div>
           </div>
         </div>
-        <!-- card 2 -->
+        <!-- Player 5 -->
         <div class="card card-compact w-80 h-96 bg-base-100 shadow-xl">
           <figure><img src="images/ronaldinho.jpg" alt="Shoes" /></figure>
           <div class="card-body">
             <h2 class="card-title justify-center text-3xl">Ronaldinho</h2>
             <p class="text-center text-xl">685 Goals . 590 Assist</p>
             <div class="card-actions justify-center">
-              <button class="btn bg-indigo-400 border-none w-6/12 text-xl">
+              <button
+                class="btn bg-indigo-400 border-none w-6/12 text-xl"
+                onclick="addPlayers(this)"
+              >
                 Select
               </button>
             </div>
           </div>
         </div>
-        <!-- card 3 -->
+        <!-- Player 6 -->
         <div class="card card-compact w-80 h-96 bg-base-100 shadow-xl">
           <figure>
             <img src="images/benzema.jpg" alt="Shoes" />
@@ -121,7 +138,10 @@
             <h2 class="card-title justify-center text-3xl">Karim Benzema</h2>
             <p class="text-center text-xl">621 Goals . 586 Assist</p>
             <div class="card-actions justify-center">
-              <button class="btn bg-indigo-400 border-none w-6/12 text-xl">
+              <button
+                class="btn bg-indigo-400 border-none w-6/12 text-xl"
+                onclick="addPlayers(this)"
+              >
                 Select
               </button>
             </div>
@@ -167,5 +187,7 @@
         Copyright &copy; 2022 by Mohammad Sumon
       </h3>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
