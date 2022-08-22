@@ -76,3 +76,18 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
     console.log(totalExpensesString);
     totalExpenses.innerText = playerExpensesValueTotalString + managerInputTotalString + coachInputTotalString;
 })
+
+
+// extra recommended works
+const allInputFields = document.querySelectorAll('input.input-bordered');
+for (const input of allInputFields) {
+    input.addEventListener('input', function(){
+        console.log(input.value);
+
+        if(isNaN(input.value)){
+            window.alert('Please enter a valid number');
+            input.value = '';
+        }
+        
+    })
+}
