@@ -3,8 +3,8 @@ const players = [];
 let count = 0;
 function addPlayers(name){
     count++;
-    // const nameButton = name;
-    // console.log(nameButton);
+    const nameButton = name;
+    nameButton.disabled = true;
     const names = name.parentNode.parentNode.children[0].innerText;
     // console.log(names);
     // players.push(names);
