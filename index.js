@@ -6,10 +6,6 @@ function addPlayers(name){
     const nameButton = name;
     nameButton.disabled = true;
     const names = name.parentNode.parentNode.children[0].innerText;
-    // console.log(names);
-    // players.push(names);
-    // console.log(players.length);
-    // playerNames();
 
     const previousOrderContainer = document.getElementById('order-container');
     const newOrderList = document.createElement ('ol');
@@ -19,7 +15,7 @@ function addPlayers(name){
     previousOrderContainer.appendChild(newOrderList);
     
     players.push(names);
-    // console.log(players.length);
+
     if(players.length > 5){
         alert('You can not add more than five players');
         previousOrderContainer.innerText = '';
@@ -32,12 +28,10 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
     const perPlayerInput = document.getElementById('per-player-input');
     const perPlayerInputValue = perPlayerInput.value;
     const perPlayerInputValueTotalString = parseFloat(perPlayerInputValue);
-    console.log(perPlayerInputValueTotalString);
 
     const playerExpenses = document.getElementById('player-expenses');
     const playerExpensesValue = playerExpenses.innerText;
     const playerExpensesValueTotalString = parseFloat(playerExpensesValue);
-    console.log(playerExpensesValueTotalString);
 
     const totalPlayerExpenses = perPlayerInputValueTotalString * players.length;
     playerExpenses.innerText = totalPlayerExpenses;
@@ -58,22 +52,19 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
     const managerInput = document.getElementById('manager-input');
     const managerInputValue = managerInput.value;
     const managerInputTotalString = parseFloat(managerInputValue);
-    console.log(managerInputTotalString);
 
     const coachInput = document.getElementById('coach-input');
     const coachInputValue = coachInput.value;
     const coachInputTotalString = parseFloat(coachInputValue);
-    console.log(coachInputTotalString);
 
     const playerExpenses = document.getElementById('player-expenses');
     const playerExpensesValue = playerExpenses.innerText;
     const playerExpensesValueTotalString = parseFloat(playerExpensesValue);
-    console.log(playerExpensesValueTotalString);
 
     const totalExpenses = document.getElementById('total-expenses');
     const totalExpensesValue = totalExpenses.innerText;
     const totalExpensesString = parseFloat(totalExpensesValue);
-    console.log(totalExpensesString);
+
     totalExpenses.innerText = playerExpensesValueTotalString + managerInputTotalString + coachInputTotalString;
 })
 
@@ -81,7 +72,7 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
 // extra recommended works for validation
 const allInputFields = document.querySelectorAll('input.input-bordered');
 for (const input of allInputFields) {
-    input.addEventListener('input', function(){
+    input.addEventListener('click', function(){
         console.log(input.value);
 
         if(isNaN(input.value)){
