@@ -15,14 +15,15 @@ function addPlayers(name){
     const newOrderList = document.createElement ('ol');
     newOrderList.innerHTML = `
     <ol><li>${count + '. ' + names}</li></ol>
-    `
+    `;
     previousOrderContainer.appendChild(newOrderList);
     
     players.push(names);
-    console.log(players.length);
+    // console.log(players.length);
     if(players.length > 5){
         alert('You can not add more than five players');
         previousOrderContainer.innerText = '';
+        return previousOrderContainer;
     }
 
 }
@@ -51,9 +52,6 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
         alert('Please do not add more than five players');
         playerExpenses.innerText = ''; 
     }
-    // else if(perPlayerInputValueTotalString !== 'number'){
-    //     alert('Please enter a valid number');
-    // }
 })
 
 document.getElementById('calculate-total-btn').addEventListener('click', function(){
