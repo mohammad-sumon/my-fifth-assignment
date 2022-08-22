@@ -72,7 +72,7 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
 // extra recommended works for validation
 const allInputFields = document.querySelectorAll('input.input-bordered');
 for (const input of allInputFields) {
-    input.addEventListener('click', function(){
+    input.addEventListener('input', function(){
         console.log(input.value);
 
         if(isNaN(input.value)){
