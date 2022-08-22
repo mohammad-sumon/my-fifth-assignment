@@ -14,7 +14,7 @@ function addPlayers(name){
     const previousOrderContainer = document.getElementById('order-container');
     const newOrderList = document.createElement ('ol');
     newOrderList.innerHTML = `
-    <ol><li>${count}${names}</li></ol>
+    <ol><li>${count + '. ' + names}</li></ol>
     `
     previousOrderContainer.appendChild(newOrderList);
     
@@ -23,7 +23,6 @@ function addPlayers(name){
     if(players.length > 5){
         alert('You can not add more than five players');
         previousOrderContainer.innerText = '';
-        return;
     }
 
 }
