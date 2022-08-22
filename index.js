@@ -43,7 +43,7 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
     playerExpenses.innerText = totalPlayerExpenses;
     
     if(perPlayerInputValueTotalString === 0){
-        alert('Please enter your desired players');
+        alert('Please enter a valid number');
     }
     else if(players.length === ''){
         alert('Please enter your desired player');
@@ -78,7 +78,7 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
 })
 
 
-// extra recommended works
+// extra recommended works for validation
 const allInputFields = document.querySelectorAll('input.input-bordered');
 for (const input of allInputFields) {
     input.addEventListener('input', function(){
