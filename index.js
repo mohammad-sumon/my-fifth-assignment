@@ -1,27 +1,29 @@
 
 const players = [];
+
 let count = 0;
 function addPlayers(name){
     count++;
+
     const nameButton = name;
     nameButton.disabled = true;
+
     const names = name.parentNode.parentNode.children[0].innerText;
 
-    const previousOrderContainer = document.getElementById('order-container');
-    const newOrderList = document.createElement ('ol');
-    newOrderList.innerHTML = `
-    <ol><li>${count + '. ' + names}</li></ol>
-    `;
-    previousOrderContainer.appendChild(newOrderList);
+    if(players.length < 5){
+        const previousOrderContainer = document.getElementById('order-container');
+        const newOrderList = document.createElement ('ol');
+        newOrderList.innerHTML = `
+        <ol><li>${count + '. ' + names}</li></ol>
+        `;
+        previousOrderContainer.appendChild(newOrderList);
     
-    players.push(names);
-
-    if(players.length > 5){
-        alert('You can not add more than five players');
-        previousOrderContainer.innerText = '';
-        return previousOrderContainer;
+        players.push(names);
     }
-
+    else{
+        alert('You can not add more than five players');
+        return;
+    }
 }
 
 document.getElementById('calculate-btn').addEventListener('click', function(){
